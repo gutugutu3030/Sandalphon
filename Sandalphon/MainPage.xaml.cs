@@ -30,11 +30,11 @@ namespace Sandalphon
         public MainPage()
         {
             this.InitializeComponent();
-
         }
 
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
+            await new GetThingiverse().Search("pot", this);
             base.OnNavigatedTo(e);
 
             this.Recognizer = new SpeechRecognizer();

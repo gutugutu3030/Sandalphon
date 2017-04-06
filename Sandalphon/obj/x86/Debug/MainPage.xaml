@@ -13,6 +13,7 @@
         <Button x:ConnectionId='2' Content="NoUI"
                                         
                 HorizontalAlignment="Stretch" />
+        <TextBlock x:ConnectionId='3' x:Name="textBlock" TextWrapping="Wrap" Text="TextBlock" Height="74"/>
     </StackPanel>
 </Page>
 
