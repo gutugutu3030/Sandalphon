@@ -3,9 +3,15 @@
   <CommandSet xml:lang="ja-JP">
     <CommandPrefix>SnadalphonLauncher</CommandPrefix>
     <Example>サンダルフォン起動</Example>
-    <Command Name="Command1">
+    <Command Name="debugCommand">
       <Example>サンダルフォン起動</Example>
       <ListenFor>サンダルフォン[起動][して][ください]</ListenFor>
+      <Feedback>デバッグモード認識しました</Feedback>
+      <Navigate />
+    </Command>
+    <Command Name="Command1">
+      <Example>3Dプリンター起動</Example>
+      <ListenFor>3Dプリンター[起動][して][ください]</ListenFor>
       <Feedback>認識しました</Feedback>
       <Navigate />
     </Command>

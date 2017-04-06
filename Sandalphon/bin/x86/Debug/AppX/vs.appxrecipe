@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>1f1dd862-cc96-426a-9812-1e92637508c7</PackageIdentityName>
     <PackageIdentityPublisher>CN=gutug</PackageIdentityPublisher>
-    <IntermediateOutputPath>c:\users\gutug\onedrive\ドキュメント\visual studio 2015\Projects\Sandalphon\Sandalphon\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -25,16 +25,20 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="c:\users\gutug\onedrive\ドキュメント\visual studio 2015\Projects\Sandalphon\Sandalphon\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-06T08:14:14.710</Modified>
+      <Modified>2017-04-06T10:40:41.320</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="c:\users\gutug\onedrive\ドキュメント\visual studio 2015\Projects\Sandalphon\Sandalphon\bin\x86\Debug\Sandalphon.exe">
+    <AppxPackagedFile Include="C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\bin\x86\Debug\Sandalphon.exe">
       <PackagePath>entrypoint\Sandalphon.exe</PackagePath>
-      <Modified>2017-04-06T08:14:14.191</Modified>
+      <Modified>2017-04-06T10:40:40.431</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gutug\.nuget\packages\HtmlAgilityPack\1.4.9.5\lib\NetCore45\HtmlAgilityPack.dll">
+      <PackagePath>HtmlAgilityPack.dll</PackagePath>
+      <Modified>2016-07-14T02:01:16.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gutug\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -448,64 +452,64 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T14:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\gutug\onedrive\ドキュメント\visual studio 2015\Projects\Sandalphon\Sandalphon\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2017-04-06T03:03:44.509</Modified>
+      <Modified>2017-04-06T10:17:05.965</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\gutug\onedrive\ドキュメント\visual studio 2015\Projects\Sandalphon\Sandalphon\VoiceCommands.xml">
+    <AppxPackagedFile Include="C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\VoiceCommands.xml">
       <PackagePath>VoiceCommands.xml</PackagePath>
-      <Modified>2017-04-06T04:40:15.989</Modified>
+      <Modified>2017-04-06T10:30:20.599</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\gutug\onedrive\ドキュメント\visual studio 2015\Projects\Sandalphon\Sandalphon\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2015-10-10T13:07:50.000</Modified>
+      <Modified>2017-04-06T10:17:05.895</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\gutug\onedrive\ドキュメント\visual studio 2015\Projects\Sandalphon\Sandalphon\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T13:07:50.000</Modified>
+      <Modified>2017-04-06T10:17:05.897</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\gutug\onedrive\ドキュメント\visual studio 2015\Projects\Sandalphon\Sandalphon\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T13:07:50.000</Modified>
+      <Modified>2017-04-06T10:17:05.899</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\gutug\onedrive\ドキュメント\visual studio 2015\Projects\Sandalphon\Sandalphon\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T13:07:50.000</Modified>
+      <Modified>2017-04-06T10:17:05.902</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\gutug\onedrive\ドキュメント\visual studio 2015\Projects\Sandalphon\Sandalphon\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T13:07:50.000</Modified>
+      <Modified>2017-04-06T10:17:05.903</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\gutug\onedrive\ドキュメント\visual studio 2015\Projects\Sandalphon\Sandalphon\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T13:07:50.000</Modified>
+      <Modified>2017-04-06T10:17:05.905</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\gutug\onedrive\ドキュメント\visual studio 2015\Projects\Sandalphon\Sandalphon\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T13:07:50.000</Modified>
+      <Modified>2017-04-06T10:17:05.907</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\gutug\onedrive\ドキュメント\visual studio 2015\Projects\Sandalphon\Sandalphon\bin\x86\Debug\Sandalphon.xr.xml">
+    <AppxPackagedFile Include="C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\bin\x86\Debug\Sandalphon.xr.xml">
       <PackagePath>Sandalphon.xr.xml</PackagePath>
-      <Modified>2017-04-06T03:57:50.336</Modified>
+      <Modified>2017-04-06T10:17:12.358</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-01-15T07:38:13.161</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\gutug\onedrive\ドキュメント\visual studio 2015\Projects\Sandalphon\Sandalphon\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-06T04:19:25.918</Modified>
+      <Modified>2017-04-06T10:40:41.029</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\gutug\onedrive\ドキュメント\visual studio 2015\Projects\Sandalphon\Sandalphon\bin\x86\Debug\Core\Sandalphon.exe">
+    <AppxPackagedFile Include="C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\bin\x86\Debug\Core\Sandalphon.exe">
       <PackagePath>Sandalphon.exe</PackagePath>
-      <Modified>2017-04-06T08:14:14.688</Modified>
+      <Modified>2017-04-06T10:40:41.312</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
