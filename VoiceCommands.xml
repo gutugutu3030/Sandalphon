@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="ja-jp" Name="HolCommandSet_ja-jp">
+    <CommandPrefix>サンプルアプリ</CommandPrefix>
+    <Example>起動</Example>
+
+    <Command Name="LaunchApp">
+      <Example>起動</Example>
+      <ListenFor>起動</ListenFor>
+      <Feedback>サンプルアプリを起動しています</Feedback>
+      <Navigate />
+    </Command>
+  </CommandSet>
+</VoiceCommands>

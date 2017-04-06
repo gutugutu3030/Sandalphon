@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="ja-JP">
+    <CommandPrefix>SnadalphonLauncher</CommandPrefix>
+    <Example>サンダルフォン起動</Example>
+    <Command Name="Command1">
+      <Example>サンダルフォン起動</Example>
+      <ListenFor>サンダルフォン[起動][して][ください]</ListenFor>
+      <Feedback>認識しました</Feedback>
+      <Navigate />
+    </Command>
+  </CommandSet>
+</VoiceCommands>
