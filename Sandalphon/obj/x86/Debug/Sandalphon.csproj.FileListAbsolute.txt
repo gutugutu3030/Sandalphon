@@ -409,3 +409,8 @@ C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\obj\x86\
 C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\obj\x86\Debug\FxResources.System.Security.Cryptography.Encoding.SR.resw
 C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\obj\x86\Debug\FxResources.System.Security.Cryptography.Primitives.SR.resw
 C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\obj\x86\Debug\FxResources.System.Security.Cryptography.X509Certificates.SR.resw
+C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\obj\x86\Debug\Choosing3dModelPage.g.i.cs
+C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\obj\x86\Debug\Choosing3dModelPage.g.cs
+C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\obj\x86\Debug\Choosing3dModelPage.xaml
+C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\obj\x86\Debug\Choosing3dModelPage.xbf
+C:\Users\gutug\OneDrive\ドキュメント\GitHub\Sandalphon\Sandalphon\bin\x86\Debug\Choosing3dModelPage.xbf

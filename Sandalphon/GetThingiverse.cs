@@ -1,9 +1,11 @@
 ﻿using HtmlAgilityPack;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
+using System.Threading.Tasks;
 using Windows.UI.Xaml.Controls;
 
 public class GetThingiverse
@@ -17,53 +19,71 @@ public class GetThingiverse
 	{
         url = "http://www.thingiverse.com/search?q=";
 	}
-    public async void test()
+    public async Task Search(String query,Page page,TextBlock tb)
     {
-        await Search("",null);
 
-    }
-    public async System.Threading.Tasks.Task<string[]> Search(String query,Page page)
-    {
         HtmlDocument doc = new HtmlDocument();
-        using (var client = new HttpClient())
-        using (var stream = await client.GetStreamAsync(new Uri(url+query)))
-        {
-            // HtmlAgilityPack.HtmlDocumentオブジェクトにHTMLを読み込ませる
-            doc.Load(stream, Encoding.UTF8);
+        using (var client = new HttpClient()) {
+            List<ModelItem> getData = new List<ModelItem>();
+
+            tb.Text += url + query;
+
+            using (var stream = await client.GetStreamAsync(new Uri(url + query/* + "/page:" + 1*/)))
+            {
+                    // HtmlAgilityPack.HtmlDocumentオブジェクトにHTMLを読み込ませる
+                    doc.Load(stream, Encoding.UTF8);
+            }
+            if (doc == null)
+            {
+                return;
+            }
+            foreach (HtmlNode node in doc.DocumentNode.Descendants("a"))
+            {
+                if (!node.Attributes.Contains("class"))
+                {
+                    continue;
+                }
+                if (node.Attributes["class"].Value.Equals("thing-img-wrapper"))
+                {
+                    var item = new ModelItem();
+                    item.id = node.GetAttributeValue("href", "");
+                    string s=node.InnerHtml.Substring(node.InnerHtml.IndexOf("src=\"")+5);
+                    item.imageUrl = s.Substring(0, s.IndexOf("\""));
+                    getData.Add(item);
+                }
+            }
+            if (getData != null)
+            {
+                items = new ModelItem[getData.Count];
+                for (int i = 0; i < items.Length; i++)
+                {
+                    items[i] = getData[i];
+                }
+                page.Frame.Navigate(typeof(Sandalphon.Choosing3dModelPage), this);
+
+            }
         }
-        var titles = doc.DocumentNode.Descendants("title");
-        // 最初のtitleタグのノードを取り出す
-        var titleNode = titles.First();
+    }
 
-        // titleタグの値(サイトのタイトルといて表示される部分)を取得する
-        var title = titleNode.InnerText;
-        Debug.WriteLine(doc.ToString());
-        Debug.WriteLine(title);
-        page.Frame.Navigate(typeof(Sandalphon.Choosing3dModelPage),this);
-        string[] ans = { doc.ToString() };
-
-        return ans;
+    public string[] getImageUrl()
+    {
+        string[] data = new string[9];
+        for (int i = 0; i + index < items.Length && i < 9; i++)
+        {
+            data[i] = items[i + index].imageUrl;
+        }
+        return data;
     }
 
     public string[] getNextImageUrl()
     {
         index = Math.Max(index - 9, 0);
-        string[] data = new string[9];
-        for (int i = 0; i + index < items.Length && i < 9; i++)
-        {
-            data[i] = items[i + index].imageUrl;
-        }
-        return data;
+        return getImageUrl();
     }
     public string[] gePreviousImageUrl()
     {
         index = Math.Min(index +9, items.Length-1);
-        string[] data = new string[9];
-        for (int i = 0; i + index < items.Length && i < 9; i++)
-        {
-            data[i] = items[i + index].imageUrl;
-        }
-        return data;
+        return getImageUrl();
     }
 
 
@@ -71,10 +91,15 @@ public class GetThingiverse
     {
         public string imageUrl;
         public string id;
-        ModelItem(string id,string imageUrl)
+        public ModelItem()
+        {
+
+        }
+        public ModelItem(string id,string imageUrl)
         {
             this.id = id;
             this.imageUrl = imageUrl;
         }
+        
     }
 }

@@ -37,7 +37,6 @@ namespace Sandalphon
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
-            new GetThingiverse().test();
         }
 
         /// <summary>

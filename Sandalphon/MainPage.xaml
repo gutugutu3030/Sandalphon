@@ -13,6 +13,6 @@
         <Button Content="NoUI"
                 Click="ButtonNoUI_Click"
                 HorizontalAlignment="Stretch" />
-        <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="TextBlock" Height="74"/>
+        <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="TextBlock" Height="221"/>
     </StackPanel>
 </Page>

@@ -34,11 +34,11 @@ namespace Sandalphon
 
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
-            await new GetThingiverse().Search("pot", this);
             base.OnNavigatedTo(e);
 
             this.Recognizer = new SpeechRecognizer();
             await this.Recognizer.CompileConstraintsAsync();
+
         }
 
         private async void ButtonWithUI_Click(object sender, RoutedEventArgs e)
@@ -71,9 +71,7 @@ namespace Sandalphon
 
         private async void ButtonNoUI_Click(object sender, RoutedEventArgs e)
         {
-            var result = await this.Recognizer.RecognizeAsync();
-            var dialog = new MessageDialog(result.Text);
-            await dialog.ShowAsync();
+            await new GetThingiverse().Search("pot", this,textBlock);
         }
     }
 }
